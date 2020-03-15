@@ -1,0 +1,158 @@
+baseurl = "https://cjt-jackton.github.io/"
+title = "Chinese tea ~ 上海红茶馆"
+
+theme = "hugo-coder"
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "CJT"
+    info = "24 years old, is student."
+    description = "CJT's personal website"
+    keywords = "blog,developer,personal"
+    avatarurl = "images/avatar.jpg"
+
+    favicon_32 = "/images/favicon.ico"
+    favicon_16 = "/images/favicon.ico"
+
+    footercontent = "🍰 is a lie."
+
+    dateformat = "January 2, 2006"
+
+    hidecredits = false
+    hidecopyright = false
+    since = 2020
+
+    rtl = false
+
+    colorscheme = "dark"
+
+    math = true
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/cjt-jackton/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 2
+    url = "https://twitter.com/CJT____________/"
+[[params.social]]
+    name = "Mail"
+    icon = "fas fa-envelope fa-2x"
+    weight = 3
+    url = "mailto:cjt.jackton@gmail.com"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "Post"
+            weight = 1
+            url = "/posts/"
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 2
+            url = "/about/"
+
+            [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 3
+            url = "/projects/"
+
+            [[languages.en.menu.main]]
+            name = "Contact me"
+            weight = 5
+            url = "/contact/"
+
+    [languages.zh-cn]
+        languagename = "中文"
+
+        [languages.zh-cn.params]
+            author = "CJT"
+            info = "24岁，是学生。"
+            description = "CJT 个人主页"
+            keywords = "blog,developer,personal"
+            footercontent = "嗯，oc。"
+
+        [languages.zh-cn.menu]
+
+            [[languages.zh-cn.menu.main]]
+            name = "自我介绍"
+            weight = 1
+            url = "about/"
+
+            [[languages.zh-cn.menu.main]]
+            name = "博文"
+            weight = 2
+            url = "posts/"
+
+            [[languages.zh-cn.menu.main]]
+            name = "项目"
+            weight = 3
+            url = "projects/"
+
+            [[languages.zh-cn.menu.main]]
+            name = "联络"
+            weight = 5
+            url = "contact/"
+
+    [languages.ja]
+        languagename = "日本語"
+        title = "Chinese tea ~ 上海紅茶館"
+
+        [languages.ja.params]
+            author = "CJT"
+            info = "24歳、学生です。"
+            description = "CJTのサイト"
+            keywords = "blog,developer,personal"
+            footercontent = "お菓子よ！この酒飲みが！"
+
+        [languages.ja.menu]
+
+            [[languages.ja.menu.main]]
+            name = "自分紹介"
+            weight = 1
+            url = "about/"
+
+            [[languages.ja.menu.main]]
+            name = "ブログ"
+            weight = 2
+            url = "posts/"
+
+            [[languages.ja.menu.main]]
+            name = "プロジェクト"
+            weight = 3
+            url = "projects/"
+
+            [[languages.ja.menu.main]]
+            name = "連絡"
+            weight = 5
+            url = "contact/"
