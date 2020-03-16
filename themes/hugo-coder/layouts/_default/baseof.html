@@ -63,9 +63,7 @@
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
-    {{ range .Site.Params.custom_js }}
-      <script src="{{ . | relURL }}"></script>
-    {{ end }}
+
 
     {{ range .Site.Params.custom_scss }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
@@ -96,7 +94,7 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-    <main class="wrapper">
+    <main class="wrapper" id="particles-js">
       {{ partial "header.html" . }}
 
       <div class="content">
@@ -105,6 +103,9 @@
 
       {{ partial "footer.html" . }}
     </main>
+    {{ range .Site.Params.custom_js }}
+    <script src="{{ . | relURL }}"></script>
+    {{ end }}
 
     {{ template "_internal/google_analytics.html" . }}
 
