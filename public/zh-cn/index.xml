@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chinese tea ~ 上海红茶馆</title>
+    <link>https://cjt-jackton.github.io/zh-cn/</link>
+    <description>Recent content on Chinese tea ~ 上海红茶馆</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Mar 2020 14:01:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjt-jackton.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>第一篇文章</title>
+      <link>https://cjt-jackton.github.io/zh-cn/posts/first-post/</link>
+      <pubDate>Sun, 15 Mar 2020 23:12:12 +0800</pubDate>
+      
+      <guid>https://cjt-jackton.github.io/zh-cn/posts/first-post/</guid>
+      <description>本博客是由HUGO搭建的。</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://cjt-jackton.github.io/zh-cn/about/</link>
+      <pubDate>Sun, 15 Mar 2020 14:01:34 +0800</pubDate>
+      
+      <guid>https://cjt-jackton.github.io/zh-cn/about/</guid>
+      <description>你好，我是一个兴趣使然的程序员。
+本博客主要是作为我自己学习的记录。如果这里的内容对你有些许帮助的话那是我的荣幸。
+Education  🎓 Rochester Insititute of Technology
+ 计算机科学 硕士 (2019)
+  🎓 South China University of Technology
+ 软件工程 学士 (2017)
+ </description>
+    </item>
+    
+  </channel>
+</rss>

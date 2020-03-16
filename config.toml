@@ -17,7 +17,7 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "CJT"
-    info = "24 years old, is student."
+    info = "I set out to do something I love."
     description = "CJT's personal website"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
@@ -49,14 +49,19 @@ disqusShortname = "yourdiscussshortname"
     weight = 1
     url = "https://github.com/cjt-jackton/"
 [[params.social]]
+    name = "Steam"
+    icon = "fab fa-steam-symbol fa-2x"
+    weight = 2
+    url = "https://steamcommunity.com/id/CJT-Jackton"
+[[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
-    weight = 2
+    weight = 3
     url = "https://twitter.com/CJT____________/"
 [[params.social]]
     name = "Mail"
     icon = "fas fa-envelope fa-2x"
-    weight = 3
+    weight = 4
     url = "mailto:cjt.jackton@gmail.com"
 
 # Menu links
@@ -76,56 +81,46 @@ disqusShortname = "yourdiscussshortname"
         [languages.en.menu]
 
             [[languages.en.menu.main]]
-            name = "Post"
+            name = "Blog"
             weight = 1
             url = "/posts/"
 
             [[languages.en.menu.main]]
-            name = "About"
-            weight = 2
-            url = "/about/"
-
-            [[languages.en.menu.main]]
             name = "Projects"
-            weight = 3
+            weight = 2
             url = "/projects/"
 
             [[languages.en.menu.main]]
-            name = "Contact me"
-            weight = 5
-            url = "/contact/"
+            name = "About"
+            weight = 3
+            url = "/about/"
 
     [languages.zh-cn]
         languagename = "中文"
 
         [languages.zh-cn.params]
             author = "CJT"
-            info = "24岁，是学生。"
+            info = "一个兴趣使然的程序员"
             description = "CJT 个人主页"
             keywords = "blog,developer,personal"
-            footercontent = "嗯，oc。"
+            footercontent = "嗯，oc！"
 
         [languages.zh-cn.menu]
 
             [[languages.zh-cn.menu.main]]
-            name = "自我介绍"
-            weight = 1
-            url = "about/"
-
-            [[languages.zh-cn.menu.main]]
             name = "博文"
-            weight = 2
-            url = "posts/"
+            weight = 1
+            url = "/posts/"
 
             [[languages.zh-cn.menu.main]]
             name = "项目"
-            weight = 3
-            url = "projects/"
+            weight = 2
+            url = "/projects/"
 
             [[languages.zh-cn.menu.main]]
-            name = "联络"
-            weight = 5
-            url = "contact/"
+            name = "关于"
+            weight = 3
+            url = "/about/"
 
     [languages.ja]
         languagename = "日本語"
@@ -133,7 +128,7 @@ disqusShortname = "yourdiscussshortname"
 
         [languages.ja.params]
             author = "CJT"
-            info = "24歳、学生です。"
+            info = "趣味でプログラマーをやっている者だ"
             description = "CJTのサイト"
             keywords = "blog,developer,personal"
             footercontent = "お菓子よ！この酒飲みが！"
@@ -141,21 +136,16 @@ disqusShortname = "yourdiscussshortname"
         [languages.ja.menu]
 
             [[languages.ja.menu.main]]
-            name = "自分紹介"
-            weight = 1
-            url = "about/"
-
-            [[languages.ja.menu.main]]
             name = "ブログ"
-            weight = 2
-            url = "posts/"
+            weight = 1
+            url = "/posts/"
 
             [[languages.ja.menu.main]]
             name = "プロジェクト"
-            weight = 3
-            url = "projects/"
+            weight = 2
+            url = "/projects/"
 
             [[languages.ja.menu.main]]
-            name = "連絡"
-            weight = 5
-            url = "contact/"
+            name = "自己紹介"
+            weight = 3
+            url = "/about/"

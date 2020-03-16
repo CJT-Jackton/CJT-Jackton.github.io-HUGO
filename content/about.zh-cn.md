@@ -4,27 +4,15 @@ slug: "about"
 date: 2020-03-15T14:01:34+08:00
 ---
 
-Hugo is a static site engine written in Go.
+你好，我是一个兴趣使然的程序员。
 
+本博客主要是作为我自己学习的记录。如果这里的内容对你有些许帮助的话那是我的荣幸。
 
-It makes use of a variety of open source projects including:
+## Education
+**&nbsp;🎓&nbsp; Rochester Insititute of Technology**
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+> 计算机科学 硕士 (2019)
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+**&nbsp;🎓&nbsp; South China University of Technology**
 
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+> 软件工程 学士 (2017)
