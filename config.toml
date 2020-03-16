@@ -97,6 +97,7 @@ disqusShortname = "yourdiscussshortname"
 
     [languages.zh-cn]
         languagename = "中文"
+        dateformat = "2006 年 1 月 2 日"
 
         [languages.zh-cn.params]
             author = "CJT"
@@ -125,6 +126,7 @@ disqusShortname = "yourdiscussshortname"
     [languages.ja]
         languagename = "日本語"
         title = "Chinese tea ~ 上海紅茶館"
+        dateformat = "2006 年 1 月 2 日"
 
         [languages.ja.params]
             author = "CJT"

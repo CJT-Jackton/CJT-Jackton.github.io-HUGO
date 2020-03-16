@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chinese tea ~ 上海紅茶館</title>
+    <link>https://cjt-jackton.github.io/ja/</link>
+    <description>Recent content on Chinese tea ~ 上海紅茶館</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Mar 2020 14:01:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjt-jackton.github.io/ja/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The first post</title>
+      <link>https://cjt-jackton.github.io/ja/posts/first-post/</link>
+      <pubDate>Sun, 15 Mar 2020 23:06:43 +0800</pubDate>
+      
+      <guid>https://cjt-jackton.github.io/ja/posts/first-post/</guid>
+      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading  This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
+$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
+   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://cjt-jackton.github.io/ja/about/</link>
+      <pubDate>Sun, 15 Mar 2020 14:01:39 +0800</pubDate>
+      
+      <guid>https://cjt-jackton.github.io/ja/about/</guid>
+      <description>はい、どうも CJT です。中国人です。
+僕はいま日本語を勉強しているから、日本語でこのブログを書いています。
+それから段々ブログ投稿を翻訳する。たぶん。
+Education  🎓 Rochester Insititute of Technology
+ コンピュータ科学　修士 (2019)
+  🎓 South China University of Technology
+ ソフトウエアエンジニアリング　学士 (2017)
+ </description>
+    </item>
+    
+  </channel>
+</rss>
