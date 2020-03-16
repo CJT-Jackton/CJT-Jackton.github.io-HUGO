@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>第一篇文章</title>
+      <title>现在是HUGO时间</title>
       <link>https://cjt-jackton.github.io/zh-cn/posts/first-post/</link>
       <pubDate>Sun, 15 Mar 2020 23:12:12 +0800</pubDate>
       
       <guid>https://cjt-jackton.github.io/zh-cn/posts/first-post/</guid>
-      <description>本博客是由HUGO搭建的。</description>
+      <description>So I finally made up my mind to spent a weekend setting up my blog with Hugo. Well I been wanting to do this for a long time but honestly I am terrible at writing stuffs since school days. And to be fair I don&amp;rsquo;t really have that much of stuffs that worth sharing. However, things are changing. As my knowledge on game developing grow I feel increasingly need to actually writing down the key points in game development.</description>
     </item>
     
     <item>
@@ -27,8 +27,8 @@
       
       <guid>https://cjt-jackton.github.io/zh-cn/about/</guid>
       <description>你好，我是一个兴趣使然的程序员。
-本博客主要是作为我自己学习的记录。如果这里的内容对你有些许帮助的话那是我的荣幸。
-Education  🎓 Rochester Insititute of Technology
+本博客主要是作为我自己学习的记录，主要是游戏开发中关于图形方面的文章。
+Interests  游戏 Shader 画画  Education  🎓 Rochester Insititute of Technology
  计算机科学 硕士 (2019)
   🎓 South China University of Technology
  软件工程 学士 (2017)

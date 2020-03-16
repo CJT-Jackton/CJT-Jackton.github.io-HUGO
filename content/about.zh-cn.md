@@ -6,7 +6,12 @@ date: 2020-03-15T14:01:34+08:00
 
 你好，我是一个兴趣使然的程序员。
 
-本博客主要是作为我自己学习的记录。如果这里的内容对你有些许帮助的话那是我的荣幸。
+本博客主要是作为我自己学习的记录，主要是游戏开发中关于图形方面的文章。
+
+## Interests
+- 游戏
+- Shader
+- 画画
 
 ## Education
 **&nbsp;🎓&nbsp; Rochester Insititute of Technology**
