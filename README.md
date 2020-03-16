@@ -1,2 +1,2 @@
-# CJT-Jackton.github.io-HUGO
-The HUGO source of my site.
+# CJT-Jackton.github.io HUGO
+The [HUGO](https://gohugo.io/) source of my site.
