@@ -42,8 +42,6 @@ disqusShortname = "yourdiscussshortname"
     custom_css = [ "/css/particles.css" ]
     custom_js = [ "/js/particles.js", "/js/app.js" ]
 
-    disqusShortname = ""
-
  [params.utteranc]
     enable = false
     repo = "CJT-Jackton/CJT-Jackton.github.io-HUGO"
