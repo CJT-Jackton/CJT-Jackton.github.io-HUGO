@@ -9,9 +9,14 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+# pygmentsstyle = "b2"
+# pygmentscodefences = true
+# pygmentscodefencesguesssyntax = false
+
+# pygmentsCodeFences = true
+# pygmentsCodefencesGuessSyntax = true
+# pygmentsUseClassic = true
+# pygmentsStyle = "monokai"
 
 disqusShortname = "yourdiscussshortname"
 
@@ -39,8 +44,8 @@ disqusShortname = "yourdiscussshortname"
 
     math = true
 
-    custom_css = [ "/css/particles.css" ]
-    custom_js = [ "/js/particles.js", "/js/app.js" ]
+    custom_css = [ "/css/particles.css", "/css/prism.css" ]
+    custom_js = [ "/js/particles.js", "/js/app.js", "/js/prism.js" ]
 
  [params.utteranc]
     enable = false

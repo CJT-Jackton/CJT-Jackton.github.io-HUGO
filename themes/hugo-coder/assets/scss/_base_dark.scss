@@ -17,13 +17,17 @@
   }
 
   code {
-    background-color: $alt-bg-color-dark;
+    /*
+    background-color: $code-color-dark;
+    */
     color: $fg-color-dark;
   }
 
   pre {
     code {
+      /*
       background-color: inherit;
+      */
       color: inherit;
     }
   }
