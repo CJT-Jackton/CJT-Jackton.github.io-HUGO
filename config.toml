@@ -42,7 +42,7 @@ disqusShortname = "yourdiscussshortname"
 
     colorscheme = "dark"
 
-    math = true
+    katex = true
 
     custom_css = [ "/css/particles.css", "/css/prism.css" ]
     custom_js = [ "/js/particles.js", "/js/app.js", "/js/prism.js" ]
