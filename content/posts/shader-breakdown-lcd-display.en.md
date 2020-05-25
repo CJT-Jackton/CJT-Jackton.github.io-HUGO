@@ -85,4 +85,15 @@ float mipmapLevel = 0.5 * log2(scaleFactor);
 
 Now we can interpolate between the normal texture and pixelized texture with texture lod value. The texture lod value needs to be remap to [0, 1]. 
 
+Finally, to add some finishing touches, you can implement some glitch effect that quite common in the old television. 
 
+### Conclusion
+
+That's it for this small breakdown of LCD display shader, hope you learn something about derivative in fragment shader and texture lod. You can find the full [source code](https://github.com/CJT-Jackton/URP-LCD-Dispaly-Example) on my Github. Also I put the link to the original shader tutorial by Alan Zucconi down below, and a similar article by Austin O'brien that definitely worth reading.
+
+**{{< fas link >}}&nbsp; Useful Links**
+> Alan Zucconi \
+> [LCD Display Shader Effect](https://www.alanzucconi.com/2016/05/04/lcd-shader/)
+
+> Austin O'brien \
+> [Slime Rancher Pixel Display](https://www.austinobrien.me/blog/shader-study/slime-rancher-pixel-display)
