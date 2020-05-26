@@ -14,7 +14,7 @@ body.colorscheme-dark {
     /*
     background-color: $code-color-dark;
     */
-    color: #dadada; }
+    color: inherit; }
   body.colorscheme-dark pre code {
     /*
       background-color: inherit;
@@ -42,7 +42,7 @@ body.colorscheme-dark {
       /*
     background-color: $code-color-dark;
     */
-      color: #dadada; }
+      color: inherit; }
     body.colorscheme-auto pre code {
       /*
       background-color: inherit;
@@ -63,6 +63,9 @@ body.colorscheme-dark .content .centered .about ul li a {
   body.colorscheme-dark .content .centered .about ul li a:hover, body.colorscheme-dark .content .centered .about ul li a:focus {
     color: #B79F74; }
 
+body.colorscheme-dark .content figcaption p {
+  color: #b3b3b3; }
+
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .content .list ul li .title {
     color: #dadada; }
@@ -71,7 +74,9 @@ body.colorscheme-dark .content .centered .about ul li a {
   body.colorscheme-auto .content .centered .about ul li a {
     color: #dadada; }
     body.colorscheme-auto .content .centered .about ul li a:hover, body.colorscheme-auto .content .centered .about ul li a:focus {
-      color: #B79F74; } }
+      color: #B79F74; }
+  body.colorscheme-auto .content figcaption p {
+    color: #b3b3b3; } }
 
 body.colorscheme-dark .navigation a, body.colorscheme-dark .navigation span {
   color: #dadada; }
@@ -131,5 +136,10 @@ body.colorscheme-dark .footer a {
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .footer a {
     color: #B79F74; } }
+
+hr {
+  border: 1px solid #424242;
+  margin: 4em auto;
+  width: 67.21%; }
 
 /*# sourceMappingURL=coder-dark.css.map */

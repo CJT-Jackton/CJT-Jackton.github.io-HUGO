@@ -218,8 +218,10 @@ figure {
     padding: 0; }
   .content figcaption p {
     text-align: center;
+    /*
     font-style: italic;
-    font-size: 1.6rem;
+    */
+    font-size: 1.4rem;
     margin: 0; }
 
 .avatar img {
