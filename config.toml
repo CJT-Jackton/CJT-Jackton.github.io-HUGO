@@ -13,8 +13,8 @@ canonifyurls = true
 # pygmentscodefences = true
 # pygmentscodefencesguesssyntax = false
 
-# pygmentsCodeFences = true
-# pygmentsCodefencesGuessSyntax = true
+pygmentsCodeFences = false
+pygmentsCodefencesGuessSyntax = false
 # pygmentsUseClassic = true
 # pygmentsStyle = "monokai"
 

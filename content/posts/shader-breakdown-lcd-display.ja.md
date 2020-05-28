@@ -9,9 +9,18 @@ externalLink = ""
 series = []
 +++
 
-![](/images/shader-breakdown-lcd-display/screenshots-01.png)
+``` c
+🏗️ 翻訳作業中。その前に、英語のバージョンを読んでください。
+```
 
-So after reading the shader tutorial serial of Alan, I decided to make my own version of LCD display shader. Without further ado, let's get straight into it. This effect itself quiet simple, when you move close enough to the display, you can see the individual pixels of the LCD screen.
+{{< figure src="/images/shader-breakdown-lcd-display/Shader-Breakdown-LCD-Display.png" >}}
+
+This post is the breakdown of LCD display shader. Source code for Unity URP is provided.
+
+> {{< fab github >}} Github \
+> [Source Code](https://github.com/CJT-Jackton/URP-LCD-Dispaly-Example)
+
+After reading this [shader tutorial](https://www.alanzucconi.com/2016/05/04/lcd-shader/) by Alan Zucconi, I decided to make my own version of LCD display shader. This effect itself is quiet simple, when viewing from distance, the LCD display act identical as a standard emissive material. But once you move close enough to the display, you can see the individual pixels of the LCD screen. What different from the original tutorial is, I use derivative in fragment shader to determine when to reveal the pixel structure of the display therefore the shader can adapt to all kinds of texture with different resolution.
 
 So first off, we will need a texture that represents the actual pixel of display. A quick google search of "LCD pixel" will do the trick for you. Note that that is some displays that have none standard layout, like Pentile style display, but we won't get into these and only stick with the normal RGB pixel layout for the sake of simplicity of this tutorial.
 

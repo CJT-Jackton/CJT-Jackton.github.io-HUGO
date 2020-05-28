@@ -9,6 +9,10 @@ externalLink = ""
 series = []
 +++
 
+``` c
+🏗️ 正在翻译中。在此之前请先阅读英文的版本。
+```
+
 ![](/images/shader-breakdown-lcd-display/screenshots-01.png)
 
 So after reading the shader tutorial serial of Alan, I decided to make my own version of LCD display shader. Without further ado, let's get straight into it. This effect itself quiet simple, when you move close enough to the display, you can see the individual pixels of the LCD screen.
