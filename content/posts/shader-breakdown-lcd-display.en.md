@@ -36,9 +36,9 @@ You can also use `ceil()` or `round()`, they are functionally same here. Now we 
 
 ---
 
-### LCD Display Pixel
+### LCD Display Pixel Geometry
 
-We need a texture that represents the actual pixel structure of display that revealed when close-up. A quick google search of "LCD pixel" will do the trick for you, or you can draw one by yourself like I do. Note that that are some displays out there using none standard layout, like Pentile style display, but we won't get into these and only stick with the normal RGB pixel layout for the sake of simplicity of this tutorial.
+We need a texture that represents the geometric arrangement of the display pixel that revealed when close-up. A quick google search of "LCD pixel" will do the trick for you, or you can draw one by yourself like I do. Note that that are some displays out there using none standard layout, like Pentile style display, but we won't get into these and only stick with the normal stripe-style RGB pixel layout for the sake of simplicity of this tutorial.
 
 We want to know the dimensions of the texture we using as the display content, and use it to scale the uv coordinate so that the pixel tile on each pixel of the texture. In Unity, you can call `TextureName_TexelSize` and the thoughtful engine will automatically set up the right value for you.
 
@@ -67,7 +67,7 @@ Also, the texture seems to has some weird color shift while viewing from certain
 
 Let's start addressing the elephant in the room here ------ where is the right distance that we start revealing the pixel structure on the LCD display with different resolution? The natural idea is, it depends on the pixel real estate on screen. When a LCD pixel is occupying over a certain amount of screen pixel, we reveal it. And that happens to be how we calculate which texture mipmap level to use in fragment shader!
 
- First we need to know how texture lod level is calculated on the graphic side. The [OpenGL specification](https://www.khronos.org/registry/OpenGL/specs/gl/glspec42.core.pdf) actually give us a clue of how this is done. In the chapter 3.9.11 we have the following equation:
+ Let's take a look at how texture lod level is calculated. The [OpenGL specification](https://www.khronos.org/registry/OpenGL/specs/gl/glspec42.core.pdf) actually give us a detail explanation of how this is done. In the chapter 3.9.11 we have the following equation:
 
 \\[
 \lambda(x, y) = \log_2{\\big(\rho(x, y)\\big)}
@@ -79,9 +79,11 @@ where \\(\lambda\\) is the level-of-detail parameter, and \\(\rho(x, y)\\) is a 
 \rho = max \\Bigg\\{ \sqrt{\\Big(\frac{\partial{u}}{\partial{x}}\\Big)^{2} + \\Big(\frac{\partial{v}}{\partial{x}}\\Big)^{2} + \\Big(\frac{\partial{w}}{\partial{x}}\\Big)^{2}}, \sqrt{\\Big(\frac{\partial{u}}{\partial{y}}\\Big)^{2} + \\Big(\frac{\partial{v}}{\partial{y}}\\Big)^{2} + \\Big(\frac{\partial{w}}{\partial{y}}\\Big)^{2}} \\Bigg\\}
 \\]
 
-Okay, the partial derivative might looks scary at the first glance. Let's break it down step by step. The \\(\partial{u} / \partial{x}\\) indicates the derivative of \\(u\\) with respect to window \\(x\\), put it in another word, the change rate of texture coordinate between screen pixel currently evaluating and the adjacent pixel on the right. Note that the \\(u\\) and \\(v\\) values here aren't normalized. Take a 512\\(\times\\)512 texture as example, the texture coordinate of the center of the texture is expected to be (256, 256) instead of (0.5, 0.5). The square root of the sum of squares of derivative of \\(u\\) and \\(v\\) equals . Finally we compute the binary logarithmic of the scale factor. That actually make sense since we know that the texture size is halved each mipmap level down!
+Okay, the partial derivative might looks scary at the first glance. Let's break it down step by step. The \\(\partial{u} / \partial{x}\\) indicates the derivative of \\(u\\) with respect to window \\(x\\), put it in another word, the change rate of texture coordinate between screen pixel currently evaluating and the adjacent pixel on the right. In GPU, fragment shader never runs individually on one pixel. The smallest unit that execute fragment shader simultaneously is a 2\\(\times\\)2 grid. So the fragment actually has access to the adjacy pixels' data. We can use the fragment shader only functions `ddx()` and `ddy()` to calculate the derivative value. Assuming the value is monotonic, therefore we have \\(\partial{u} / \partial{x} = u_{0} - u_{right}\\).
 
-We can move the square root out of binary logarithmic saving us some instructions, and the equation become:
+The \\(u\\),\\(v\\), as you might expected, is the texture coordinate. Note that this texture coordinate values here isn't normalized. Take a 512\\(\times\\)512 texture as example, the texture coordinate of the center of the texture is expected to be (256, 256) instead of (0.5, 0.5). So the scale factor \\(\rho\\) is the longest display pixel length covered by the screen pixel currently evaluating.
+
+Finally we compute the binary logarithmic of the scale factor to get the lod value. If one screen pixel covered one LCD display pixel, the lod value is 0. If one screen pixel covered two LCD display pixels, then the lod value is 1. Covered four then lod become 2 and so on. That actually make sense since we know that the texture size is halved each mipmap level down! Lastly we can move the square root out of binary logarithmic saving us some instructions, and the equation become:
 
 \\[
 \lambda(x, y) = 0.5 \times \log_{2}{\\Bigg( max \\bigg\\{ \\Big(\frac{\partial{u}}{\partial{x}}\\Big)^{2} + \\Big(\frac{\partial{v}}{\partial{x}}\\Big)^{2}, \\Big(\frac{\partial{u}}{\partial{y}}\\Big)^{2} + \\Big(\frac{\partial{v}}{\partial{y}}\\Big)^{2} \\bigg\\}\\Bigg)}
@@ -124,7 +126,7 @@ half3 color = texColor.rgb * pixelMaskColor.rgb;
 
 Make sure the HDR and post processing are enabled and use the ACES tone mapping so that you can see the effect. We also want to use [Trilinear filtering](https://en.wikipedia.org/wiki/Trilinear_filtering) for the LCD pixel texture. Trilinear filtering will interpolate between mipmap level on top of Bilinear filtering, effectively remove the abruptly jump between texture lod when zoom in and zoom out with the cost of a small overhead.
 
-Finally, to add some finishing touches, you can implement some glitch effect. There are all sorts of glitches out there, and the most common one is interlacing artifact caused by mismatched refresh rate of signal source and display. I gonna leave the implementation to you.
+Finally, to add some finishing touches, you can implement some glitch effect that I won't going to in this post. There are all sorts of glitches out there, and the most common one is interlacing artifact caused by the mismatched refresh rate of signal source and display. You don't have to overexaggerate the effect since modern days displays handle glitches very well. I gonna leave the implementation to you.
 
 ---
 
