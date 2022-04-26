@@ -5,6 +5,11 @@
 
   a {
     color: $link-color-dark;
+    text-decoration: underline rgba($color: $link-color-dark, $alpha: 0.0);
+    &:focus,
+    &:hover {
+      text-decoration: underline rgba($color: $link-color-dark, $alpha: 1.0);
+    }
   }
 
   h1,

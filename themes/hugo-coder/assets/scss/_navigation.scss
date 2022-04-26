@@ -5,7 +5,7 @@
     display: inline;
     font-size: 1.6rem;
     font-family: $heading-font-family;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 6.0rem;
     color: $fg-color;
   }
@@ -62,6 +62,10 @@
         span {
           display: none;
         }
+      }
+      user-select: none;
+      span {
+        color: $alt-bg-color-dark;
       }
     }
   }

@@ -22,7 +22,7 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "CJT"
-    info = "I set out to do something I love."
+    info = "Just a guy coding out of passion"
     description = "CJT's personal website"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
@@ -30,7 +30,7 @@ disqusShortname = "yourdiscussshortname"
     favicon_32 = "/images/favicon-32x32.png"
     favicon_16 = "/images/favicon-16x16.png"
 
-    footercontent = "🍰 is a lie."
+    footercontent = "お菓子よ！この酒飲みが！"
 
     dateformat = "January 2, 2006"
 
@@ -44,8 +44,8 @@ disqusShortname = "yourdiscussshortname"
 
     katex = true
 
-    custom_css = [ "/css/particles.css", "/css/prism.css" ]
-    custom_js = [ "/js/particles.js", "/js/app.js", "/js/prism.js" ]
+    custom_css = []
+    custom_js = [ "/js/tsparticles.bundle.min.js", "/js/app.js", "/js/prism.js" ]
 
  [params.utteranc]
     enable = false
@@ -57,21 +57,25 @@ disqusShortname = "yourdiscussshortname"
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
+    iconurl = "/images/github.png"
     weight = 1
     url = "https://github.com/cjt-jackton/"
 [[params.social]]
     name = "Steam"
     icon = "fab fa-steam-symbol fa-2x"
+    iconurl = "/images/steam.png"
     weight = 2
     url = "https://steamcommunity.com/id/CJT-Jackton"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
+    iconurl = "/images/twitter.png"
     weight = 3
     url = "https://twitter.com/CJT____________/"
 [[params.social]]
     name = "Mail"
     icon = "fas fa-envelope fa-2x"
+    iconurl = "/images/mail.png"
     weight = 4
     url = "mailto:cjt.jackton@gmail.com"
 
@@ -112,10 +116,10 @@ disqusShortname = "yourdiscussshortname"
 
         [languages.zh-cn.params]
             author = "CJT"
-            info = "一个兴趣使然的程序员"
+            info = "一个兴趣使然仅此而已的程序员"
             description = "CJT 个人主页"
             keywords = "blog,developer,personal"
-            footercontent = "🐸 SWK is GOD‼"
+            footercontent = "今日もいい天気☆"
 
         [languages.zh-cn.menu]
 
@@ -144,7 +148,7 @@ disqusShortname = "yourdiscussshortname"
             info = "趣味でプログラマーをやっている者だ"
             description = "CJTのサイト"
             keywords = "blog,developer,personal"
-            footercontent = "お菓子よ！この酒飲みが！"
+            footercontent = "きっと今日は休憩の日なんだよ"
 
         [languages.ja.menu]
 

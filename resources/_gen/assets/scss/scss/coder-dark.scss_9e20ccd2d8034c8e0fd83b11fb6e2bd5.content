@@ -1,8 +1,28 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Genshin';
+  src: url("/fonts/Genshin.ttf"); }
+
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url("/fonts/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src: url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
 body.colorscheme-dark {
   color: #dadada;
   background-color: #212121; }
   body.colorscheme-dark a {
-    color: #B79F74; }
+    color: #B79F74;
+    text-decoration: underline rgba(183, 159, 116, 0); }
+    body.colorscheme-dark a:focus, body.colorscheme-dark a:hover {
+      text-decoration: underline #b79f74; }
   body.colorscheme-dark h1,
   body.colorscheme-dark h2,
   body.colorscheme-dark h3,
@@ -30,7 +50,10 @@ body.colorscheme-dark {
     color: #dadada;
     background-color: #212121; }
     body.colorscheme-auto a {
-      color: #B79F74; }
+      color: #B79F74;
+      text-decoration: underline rgba(183, 159, 116, 0); }
+      body.colorscheme-auto a:focus, body.colorscheme-auto a:hover {
+        text-decoration: underline #b79f74; }
     body.colorscheme-auto h1,
     body.colorscheme-auto h2,
     body.colorscheme-auto h3,
@@ -59,7 +82,7 @@ body.colorscheme-dark .content .list ul li .title {
     color: #B79F74; }
 
 body.colorscheme-dark .content .centered .about ul li a {
-  color: #dadada; }
+  color: #b3b3b3; }
   body.colorscheme-dark .content .centered .about ul li a:hover, body.colorscheme-dark .content .centered .about ul li a:focus {
     color: #B79F74; }
 
@@ -72,7 +95,7 @@ body.colorscheme-dark .content figcaption p {
     body.colorscheme-auto .content .list ul li .title:hover, body.colorscheme-auto .content .list ul li .title:focus {
       color: #B79F74; }
   body.colorscheme-auto .content .centered .about ul li a {
-    color: #dadada; }
+    color: #b3b3b3; }
     body.colorscheme-auto .content .centered .about ul li a:hover, body.colorscheme-auto .content .centered .about ul li a:focus {
       color: #B79F74; }
   body.colorscheme-auto .content figcaption p {
@@ -141,5 +164,182 @@ hr {
   border: 1px solid #424242;
   margin: 4em auto;
   width: 67.21%; }
+
+hr.kiki {
+  display: block;
+  background: url("/images/kiki.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  height: 12rem;
+  margin: 1em auto;
+  overflow: hidden;
+  position: relative; }
+  hr.kiki::before {
+    content: " ";
+    border: solid #424242;
+    border-width: 0 99vw;
+    line-height: 2px;
+    position: absolute;
+    padding: 0 12rem;
+    margin-top: 6rem;
+    width: fit-content;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%); }
+
+/* PrismJS 1.20.0
+https://prismjs.com/download.html#themes=prism-okaidia&languages=clike+c+glsl+hlsl&plugins=line-numbers+autolinker */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #dadada;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre-line;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #1b1b1beb; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #787878; }
+
+.token.md-link {
+  color: #787878;
+  text-decoration: underline; }
+
+.token.punctuation {
+  color: #dadada; }
+
+.token.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672; }
+
+.token.macro,
+.token.directive.keyword {
+  color: #787268; }
+
+.token.boolean,
+.token.number {
+  color: #9FA677; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #C9977D; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #dadada; }
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #BAA37A; }
+
+.token.keyword {
+  color: #7FA6D0; }
+
+.token.regex,
+.token.important {
+  color: #fd971f; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber; }
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit; }
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber; }
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right; }
+
+.token a {
+  color: inherit; }
 
 /*# sourceMappingURL=coder-dark.css.map */

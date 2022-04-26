@@ -3,3 +3,29 @@ hr {
     margin: 4em auto;
     width: 67.21%;
 }
+
+hr.kiki {
+    display: block;
+    background: url('/images/kiki.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    height: 12rem;
+    margin: 1em auto;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: " ";
+        border: solid $alt-bg-color-dark;
+        border-width: 0 99vw;
+        line-height: 2px;
+        position: absolute;
+        padding: 0 12rem;
+        margin-top: 6rem;
+        width: fit-content;
+        white-space: nowrap;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

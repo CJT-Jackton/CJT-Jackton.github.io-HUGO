@@ -141,5 +141,4 @@ That's it for this small breakdown of LCD display shader, hope you learn somethi
 > Austin O'brien \
 > [Slime Rancher Pixel Display](https://www.austinobrien.me/blog/shader-study/slime-rancher-pixel-display)
 
-
-{{< figure src="/images/kiki-footer.png" >}}
+{{< hr class="kiki" >}}

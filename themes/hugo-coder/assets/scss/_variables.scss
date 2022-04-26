@@ -1,6 +1,25 @@
+@font-face {
+    font-family: 'Genshin';
+    src: url('/fonts/Genshin.ttf');
+}
+
+@font-face {
+    font-family: 'HarmonyOS Sans';
+    src: url('/fonts/HarmonyOS_Sans_SC_Light.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HarmonyOS Sans";
+    src: url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
 // Fonts
-$text-font-family: Merriweather, Georgia, serif;
-$heading-font-family: Lato, Helvetica, sans-serif;
+$text-font-family: 'HarmonyOS Sans', sans-serif;
+$heading-font-family: Genshin, serif;
 $code-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
 // Colors

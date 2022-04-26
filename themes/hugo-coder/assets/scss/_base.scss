@@ -16,6 +16,7 @@ body {
 	font-size: 1.6em;
 	font-weight: 300;
   line-height: 1.8em;
+  margin: 0px;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
     line-height: 1.6em;
@@ -23,12 +24,14 @@ body {
 }
 
 a {
-  font-weight: 300;
+  font-weight: 600;
   color: $link-color;
-  text-decoration: none;
+  text-decoration: underline rgba($color: $link-color, $alpha: 0.0);
+  transition: text-decoration-color 0.2s;
+  text-underline-offset: 0.1em;
   &:focus,
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline rgba($color: $link-color, $alpha: 1.0);
   }
 }
 
@@ -43,7 +46,7 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-weight: 700;
+  font-weight: 500;
   color: $alt-fg-color;
   margin: 6.4rem 0 3.2rem 0;
 }
@@ -164,6 +167,7 @@ table tr th:last-child {
 }
 
 img {
+  border-radius: 0.3rem;
   max-width: 100%;
 }
 

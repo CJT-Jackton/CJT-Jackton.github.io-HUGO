@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Genshin';
+  src: url("/fonts/Genshin.ttf"); }
+
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: url("/fonts/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src: url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
 *,
 *:after,
 *:before {
@@ -10,20 +26,23 @@ html {
 body {
   color: #212121;
   background-color: #FAFAFA;
-  font-family: Merriweather, Georgia, serif;
+  font-family: "HarmonyOS Sans", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
-  line-height: 1.8em; }
+  line-height: 1.8em;
+  margin: 0px; }
   @media only screen and (max-width: 768px) {
     body {
       font-size: 1.6em;
       line-height: 1.6em; } }
 a {
-  font-weight: 300;
+  font-weight: 600;
   color: #1565c0;
-  text-decoration: none; }
+  text-decoration: underline rgba(21, 101, 192, 0);
+  transition: text-decoration-color 0.2s;
+  text-underline-offset: 0.1em; }
   a:focus, a:hover {
-    text-decoration: underline; }
+    text-decoration: underline #1565c0; }
 
 p {
   margin: 2.0rem 0 2.0rem 0; }
@@ -34,8 +53,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: Genshin, serif;
+  font-weight: 500;
   color: #000;
   margin: 6.4rem 0 3.2rem 0; }
 
@@ -141,6 +160,7 @@ table tr th:last-child {
   border-right: 0; }
 
 img {
+  border-radius: 0.3rem;
   max-width: 100%; }
 
 figure {
@@ -201,8 +221,7 @@ figure {
         margin: 3.2rem 0; }
   .content article p {
     text-align: justify;
-    text-justify: auto;
-    hyphens: auto; }
+    text-justify: auto; }
   .content .post .post-title {
     margin-bottom: .75em; }
   .content .post .post-meta i {
@@ -252,8 +271,8 @@ figure {
     .list ul li .title {
       font-size: 1.8rem;
       color: #212121;
-      font-family: Lato, Helvetica, sans-serif;
-      font-weight: 700; }
+      font-family: Genshin, serif;
+      font-weight: 400; }
       .list ul li .title:hover, .list ul li .title:focus {
         color: #1565c0; }
 
@@ -265,7 +284,8 @@ figure {
     text-align: center; }
     .centered .about h1 {
       margin-top: 2.0rem;
-      margin-bottom: 0.5rem; }
+      margin-bottom: 0.5rem;
+      color: #B79F74; }
     .centered .about h2 {
       margin-top: 1.0rem;
       margin-bottom: 0.5rem;
@@ -275,16 +295,15 @@ figure {
           font-size: 2.0rem; } }
     .centered .about ul {
       list-style: none;
-      margin: 3.0rem 0 1.0rem 0;
+      margin: 2.0rem 0 1.0rem 0;
       padding: 0; }
       .centered .about ul li {
         display: inline-block;
+        margin: 0rem 1.5rem 0rem 1.5rem;
         position: relative; }
         .centered .about ul li a {
           color: #212121;
           text-transform: uppercase;
-          margin-left: 1.0rem;
-          margin-right: 1.0rem;
           font-size: 1.6rem; }
           .centered .about ul li a:hover, .centered .about ul li a:focus {
             color: #1565c0; }
@@ -293,6 +312,22 @@ figure {
               font-size: 1.4rem; } }
           .centered .about ul li a i {
             font-size: 3.2rem; }
+          .centered .about ul li a img {
+            width: 4.8rem;
+            height: 4.8rem;
+            transition: transform 0.2s; }
+            .centered .about ul li a img:hover, .centered .about ul li a img:focus {
+              transform: translateY(-0.2rem); }
+        .centered .about ul li::before {
+          content: ' ';
+          position: absolute;
+          left: -0.4rem;
+          top: -1.5rem;
+          width: 5.6rem;
+          height: 9.0rem;
+          background-image: url("/images/chinese_knot.png");
+          background-repeat: no-repeat;
+          z-index: -1; }
   .centered .error {
     text-align: center; }
     .centered .error h1 {
@@ -315,8 +350,8 @@ figure {
   .navigation a, .navigation span {
     display: inline;
     font-size: 1.6rem;
-    font-family: Lato, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: Genshin, serif;
+    font-weight: 400;
     line-height: 6.0rem;
     color: #212121; }
   .navigation a:hover, .navigation a:focus {
@@ -357,12 +392,16 @@ figure {
       .navigation .navigation-list .navigation-item a, .navigation .navigation-list .navigation-item span {
         margin-left: 1.0rem;
         margin-right: 1.0rem; }
-    @media only screen and (max-width: 768px) {
-      .navigation .navigation-list .menu-separator {
-        border-top: 2px solid #212121;
-        margin: 0 8.0rem; }
-        .navigation .navigation-list .menu-separator span {
-          display: none; } }
+    .navigation .navigation-list .menu-separator {
+      user-select: none; }
+      @media only screen and (max-width: 768px) {
+        .navigation .navigation-list .menu-separator {
+          border-top: 2px solid #212121;
+          margin: 0 8.0rem; }
+          .navigation .navigation-list .menu-separator span {
+            display: none; } }
+      .navigation .navigation-list .menu-separator span {
+        color: #424242; }
   .navigation #menu-toggle {
     display: none; }
     @media only screen and (max-width: 768px) {
@@ -387,7 +426,7 @@ figure {
 .pagination {
   margin-top: 6.0rem;
   text-align: center;
-  font-family: Lato, Helvetica, sans-serif; }
+  font-family: Genshin, serif; }
   .pagination li {
     display: inline;
     text-align: center;
