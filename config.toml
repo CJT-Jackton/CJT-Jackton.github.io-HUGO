@@ -45,7 +45,7 @@ disqusShortname = "yourdiscussshortname"
     katex = true
 
     custom_css = []
-    custom_js = [ "/js/tsparticles.bundle.min.js", "/js/app.js", "/js/prism.js" ]
+    custom_js = [ "/js/app.js", "/js/prism.js" ]
 
  [params.utteranc]
     enable = false
