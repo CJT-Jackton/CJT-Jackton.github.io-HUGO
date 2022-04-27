@@ -2,7 +2,7 @@
   <div class="about">
     {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
       {{ with .Site.Params.avatarurl }}
-        <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+        <div class="avatar"><picture><source srcset="{{ . | relURL }}.webp" type="image/webp"><img src="{{ . | relURL }}.jpg" alt="avatar"></picture></div>
       {{ end }}
     {{ end }}
     {{ with .Site.Params.gravatar }}
@@ -16,7 +16,10 @@
         {{ if .iconurl }}
           <li>
             <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
-              <img src="{{ .iconurl }}">
+              <picture>
+                <source srcset="{{ .iconurl }}.webp" type="image/webp">
+                <img src="{{ .iconurl }}.png">
+              </picture>
             </a>
           </li>
         {{ else }}

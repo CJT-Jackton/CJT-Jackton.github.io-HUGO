@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Genshin';
-  src: url("/fonts/Genshin.ttf"); }
+  font-family: 'HYWenHei';
+  src: url("/fonts/HYWenHei-85W.woff2") format("woff2"), url("/fonts/HYWenHei-85W.woff") format("woff"), url("/fonts/HYWenHei-85W.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'HarmonyOS Sans';
-  src: url("/fonts/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
+  src: url("/fonts/HarmonyOS_Sans_SC_Light.woff2") format("woff2"), url("/fonts/HarmonyOS_Sans_SC_Light.woff") format("woff"), url("/fonts/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "HarmonyOS Sans";
-  src: url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
+  src: url("/fonts/HarmonyOS_Sans_Light_Italic.woff2") format("woff2"), url("/fonts/HarmonyOS_Sans_Light_Italic.woff") format("woff"), url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
@@ -53,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Genshin, serif;
+  font-family: "HYWenHei", serif;
   font-weight: 500;
   color: #000;
   margin: 6.4rem 0 3.2rem 0; }
@@ -271,7 +271,7 @@ figure {
     .list ul li .title {
       font-size: 1.8rem;
       color: #212121;
-      font-family: Genshin, serif;
+      font-family: "HYWenHei", serif;
       font-weight: 400; }
       .list ul li .title:hover, .list ul li .title:focus {
         color: #1565c0; }
@@ -325,7 +325,7 @@ figure {
           top: -1.5rem;
           width: 5.6rem;
           height: 9.0rem;
-          background-image: url("/images/chinese_knot.png");
+          background-image: url("/images/chinese_knot.webp");
           background-repeat: no-repeat;
           z-index: -1; }
   .centered .error {
@@ -350,7 +350,7 @@ figure {
   .navigation a, .navigation span {
     display: inline;
     font-size: 1.6rem;
-    font-family: Genshin, serif;
+    font-family: "HYWenHei", serif;
     font-weight: 400;
     line-height: 6.0rem;
     color: #212121; }
@@ -426,7 +426,7 @@ figure {
 .pagination {
   margin-top: 6.0rem;
   text-align: center;
-  font-family: Genshin, serif; }
+  font-family: "HYWenHei", serif; }
   .pagination li {
     display: inline;
     text-align: center;

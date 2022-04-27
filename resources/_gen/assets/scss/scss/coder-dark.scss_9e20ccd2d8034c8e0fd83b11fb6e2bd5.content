@@ -1,17 +1,17 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Genshin';
-  src: url("/fonts/Genshin.ttf"); }
+  font-family: 'HYWenHei';
+  src: url("/fonts/HYWenHei-85W.woff2") format("woff2"), url("/fonts/HYWenHei-85W.woff") format("woff"), url("/fonts/HYWenHei-85W.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'HarmonyOS Sans';
-  src: url("/fonts/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
+  src: url("/fonts/HarmonyOS_Sans_SC_Light.woff2") format("woff2"), url("/fonts/HarmonyOS_Sans_SC_Light.woff") format("woff"), url("/fonts/HarmonyOS_Sans_SC_Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "HarmonyOS Sans";
-  src: url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
+  src: url("/fonts/HarmonyOS_Sans_Light_Italic.woff2") format("woff2"), url("/fonts/HarmonyOS_Sans_Light_Italic.woff") format("woff"), url("/fonts/HarmonyOS_Sans_Light_Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
@@ -115,7 +115,7 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
 
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation .navigation-list .menu-separator {
-    border-top: 2px solid #dadada; } }
+    border-top: 2px solid #424242; } }
 
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation #menu-toggle:checked + label {
@@ -141,7 +141,7 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation .navigation-list .menu-separator {
-    border-top: 2px solid #dadada; } }
+    border-top: 2px solid #424242; } }
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation #menu-toggle:checked + label {
@@ -167,7 +167,7 @@ hr {
 
 hr.kiki {
   display: block;
-  background: url("/images/kiki.png");
+  background: url("/images/kiki.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;

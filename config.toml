@@ -25,7 +25,7 @@ disqusShortname = "yourdiscussshortname"
     info = "Just a guy coding out of passion"
     description = "CJT's personal website"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/avatar"
 
     favicon_32 = "/images/favicon-32x32.png"
     favicon_16 = "/images/favicon-16x16.png"
@@ -57,25 +57,25 @@ disqusShortname = "yourdiscussshortname"
 [[params.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
-    iconurl = "/images/github.png"
+    iconurl = "/images/github"
     weight = 1
     url = "https://github.com/cjt-jackton/"
 [[params.social]]
     name = "Steam"
     icon = "fab fa-steam-symbol fa-2x"
-    iconurl = "/images/steam.png"
+    iconurl = "/images/steam"
     weight = 2
     url = "https://steamcommunity.com/id/CJT-Jackton"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
-    iconurl = "/images/twitter.png"
+    iconurl = "/images/twitter"
     weight = 3
     url = "https://twitter.com/CJT____________/"
 [[params.social]]
     name = "Mail"
     icon = "fas fa-envelope fa-2x"
-    iconurl = "/images/mail.png"
+    iconurl = "/images/mail"
     weight = 4
     url = "mailto:cjt.jackton@gmail.com"
 
